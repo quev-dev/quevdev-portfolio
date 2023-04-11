@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Not Found">
+  <main class="md:text-xl h-screen flex flex-col items-center justify-center">
+    <div class="bg-mid p-12 rounded-lg shadow-xl">
+      <h2 class="text-4xl md:text-6xl font-bold mb-2 text-cAccent">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://en.wikipedia.org/wiki/HTTP_404"
+        >
+          Error 404 📃
+        </a>
+      </h2>
+      <p class="text-xl md:text-2xl">Page Not Found</p>
+      <section class="flex flex-col gap-4">
+        <p class="italic">The page is a lie. 📄</p>
+        <a class="text-cAccent" href="/">Return to home page</a>
+      </section>
+    </div>
+  </main>
+</Layout>

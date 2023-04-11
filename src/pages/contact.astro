@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
+---
+
+<Layout title="Contact - QuevDev">
+  <Navbar client:load activeLink="contact" />
+  <main class="md:text-xl">
+    <header
+      data-aos="fade-right"
+      data-aos-once="true"
+      data-aos-duration="500"
+      class="mx-12 max-w-max mt-40 mb-20 md:mt-60 md:mb-32 md:w-1/2 md:mx-auto lg:mt-80 lg:mb-40 flex flex-col justify-center"
+    >
+      <h2 class="text-4xl font-bold">Contact Me ✉️</h2>
+      <p>If you'd like to get in touch, send an email my way!</p>
+    </header>
+    <ContactForm client:load />
+  </main>
+  <Footer />
+</Layout>

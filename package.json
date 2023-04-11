@@ -1,0 +1,31 @@
+{
+  "name": "quevdev-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/netlify": "^2.2.2",
+    "@astrojs/react": "^2.1.0",
+    "@astrojs/tailwind": "^3.1.1",
+    "@emailjs/browser": "^3.11.0",
+    "@types/react": "^18.0.30",
+    "@types/react-dom": "^18.0.11",
+    "aos": "^2.3.4",
+    "astro": "^2.2.1",
+    "astro-particles": "^2.9.3",
+    "astro-seo-metadata": "^0.5.5",
+    "dotenv": "^16.0.3",
+    "emailjs": "^4.0.1",
+    "nodemailer": "^6.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.0",
+    "tsparticles": "^2.9.3"
+  }
+}

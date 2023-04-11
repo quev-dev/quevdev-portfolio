@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+import ProjectArticle from "../components/ProjectArticle";
+
+import vidGames from "../content/videos/project-games.mp4";
+import imgMusic from "../content/images/project-music.webp";
+import icFLStudio from "../content/icons/fl-studio.webp";
+import icGamemaker from "../content/icons/gamemaker.webp";
+---
+
+<Layout title="Projects - QuevDev">
+  <Navbar client:load activeLink="projects" />
+  <main class="md:text-xl">
+    <header
+      data-aos="fade-right"
+      data-aos-once="true"
+      data-aos-duration="500"
+      class="mx-12 max-w-max mt-40 mb-20 md:mt-60 md:mb-32 md:w-1/2 md:mx-auto lg:mt-80 lg:mb-40 flex flex-col justify-center"
+    >
+      <h2 class="text-4xl font-bold">Projects 🎨</h2>
+      <p>
+        You can take a look at some of the projects I've created through the
+        links below.
+      </p>
+    </header>
+    <section>
+      <ProjectArticle
+        client:load
+        title="Music"
+        projectImage={imgMusic}
+        projectClass="project-article-music"
+        description="You can listen to some of the music I've composed through SoundCloud."
+        captionIcon={icFLStudio}
+        captionText="Composed using FL Studio."
+        linkText="SoundCloud"
+        linkHref="https://soundcloud.com/quevdev"
+      />
+      <ProjectArticle
+        client:load
+        title="Games"
+        projectVideo={vidGames}
+        projectClass="project-article-games"
+        description="Check out some of the game projects I've worked on through itch.io."
+        captionIcon={icGamemaker}
+        captionText="Developed using GameMaker Studio."
+        linkText="itch.io"
+        linkHref="https://quevdev.itch.io/"
+      />
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style></style>

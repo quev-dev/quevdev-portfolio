@@ -1,0 +1,65 @@
+#scroll-btn {
+  animation: verticalSinewave 2s ease-in-out infinite;
+}
+
+.animated-border-wrapper {
+  width: 200%;
+  height: auto;
+  overflow-x: hidden;
+  z-index: 10;
+
+  pointer-events: none;
+}
+.animated-border {
+  animation: sinewave 10s ease-in-out infinite;
+  overflow-x: hidden;
+  position: relative;
+  width: 200%;
+  height: auto;
+}
+.loading-pulse {
+  animation: loadingPulse 1s ease-in-out infinite;
+}
+
+@keyframes verticalSinewave {
+  0% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes sinewave {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes loadingPulse {
+  0% {
+    scale: 115%;
+  }
+  50% {
+    scale: 100%;
+  }
+  100% {
+    scale: 115%;
+  }
+}
+
+@media (max-width: 767px) {
+  .animated-border-wrapper {
+    width: 400%;
+  }
+  .animated-border {
+    width: 400%;
+  }
+}

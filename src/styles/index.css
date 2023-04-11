@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+
+:root {
+  --cBackground: #fff3ef;
+  --cAccent: #bb3e59;
+  --cDark: #6b4062;
+  --cTransparent: rgba(255, 255, 255, 0);
+
+  --transitionDefault: all 0.25s ease;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--cBackground);
+  color: var(--cDark);
+
+  overflow-x: hidden;
+
+  scrollbar-width: thin;
+  scrollbar-color: #bb3e59 #fff3ef;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--cBackground);
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cAccent);
+  border-radius: 100vw;
+  border: solid 2px var(--cBackground);
+}
+::webkit-scrollbar-track {
+  background-color: #bb3e59;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-corner {
+  background-color: #bb3e59;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url("../content/svgs/bg-body.svg");
+
+  overflow-x: hidden;
+}
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/* Utility Classes */
+.bg-mid {
+  background-size: cover;
+  background-image: url("../content/svgs/bg-body-mid.svg");
+}
+.deactivated {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.activated {
+  pointer-events: none;
+  opacity: 1;
+}
