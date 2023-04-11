@@ -2,6 +2,8 @@
 
 Welcome to my portfolio! This website showcases the projects I've created, including **web applications**, **music**, and **game development** projects.
 
+[View Live Portfolio](https://quevdev.netlify.app/)
+
 ## Introduction 🗒️
 
 As a developer, I'm passionate about honing in on my skills to create engaging projects - this extends beyond creating web apps, as I feel the same way about creating music, games and artwork.
