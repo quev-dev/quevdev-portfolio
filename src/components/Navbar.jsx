@@ -39,6 +39,9 @@ export default function Navbar({ activeLink = "" }) {
       {showDropdown && (
         <ul className="bg-cAccent text-cBackground text-right px-4 pb-2">
           <li>
+            <a href="/">Home 🏠</a>
+          </li>
+          <li>
             <a href="/web-apps">Web Apps 📦</a>
           </li>
           <li>
@@ -63,6 +66,13 @@ export default function Navbar({ activeLink = "" }) {
           </a>
         </li>
         <li className="flex flex-row gap-4 z-50">
+          {activeLink === "home" ? (
+            <a className="font-bold activated" href="/">
+              🏠 Home
+            </a>
+          ) : (
+            <a href="/">🏠 Home</a>
+          )}
           {activeLink === "web-apps" ? (
             <a className="font-bold activated" href="/web-apps">
               📦 Web Apps
