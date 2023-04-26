@@ -74,3 +74,17 @@ textarea:focus {
   left: 100%;
   opacity: 0.75;
 }
+
+.skill-button {
+  opacity: 1;
+}
+.skill-button * {
+  transition: 0.1s all ease-in-out;
+}
+.skill-button *:hover {
+  scale: 120%;
+}
+.skill-button *:active {
+  scale: 80%;
+  opacity: 0.75;
+}
