@@ -1,26 +1,28 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
-import AppArticle from "../components/AppArticle.jsx";
+import AppArticle from '../components/AppArticle.jsx';
 
-import icfinanceInsight from "../content/icons/app-finance-insight.webp";
-import icSocialMould from "../content/icons/app-social-mould.webp";
-import vidfinanceInsight from "../content/videos/app-finance-insight.mp4";
-import vidSocialMould from "../content/videos/app-social-mould.mp4";
+import icfinanceInsight from '../content/icons/app-finance-insight.webp';
+import icSocialMould from '../content/icons/app-social-mould.webp';
+import icCatchMe from '../content/icons/app-catch-me.webp';
+import vidfinanceInsight from '../content/videos/app-finance-insight.mp4';
+import vidSocialMould from '../content/videos/app-social-mould.mp4';
+import vidCatchMe from '../content/videos/app-catch-me.mp4';
 ---
 
-<Layout title="Web Apps - QuevDev">
-  <Navbar client:load activeLink="web-apps" />
-  <main class="md:text-xl">
+<Layout title='Web Apps - QuevDev'>
+  <Navbar client:load activeLink='web-apps' />
+  <main class='md:text-xl'>
     <header
-      data-aos="fade-right"
-      data-aos-once="true"
-      data-aos-duration="500"
-      class="mx-12 mt-40 mb-20 md:mt-60 md:mb-32 md:w-1/2 md:mx-auto lg:mt-80 lg:mb-40 flex flex-col gap-1 justify-center"
+      data-aos='fade-right'
+      data-aos-once='true'
+      data-aos-duration='500'
+      class='mx-12 mt-40 mb-20 md:mt-60 md:mb-32 md:w-1/2 md:mx-auto lg:mt-80 lg:mb-40 flex flex-col gap-1 justify-center'
     >
-      <h2 class="text-4xl font-bold">Web Apps 📦</h2>
+      <h2 class='text-4xl font-bold'>Web Apps 📦</h2>
       <p>
         Try out a selection of web applications I've created. Both a live
         version and a GitHub repository are available for each project!
@@ -29,21 +31,30 @@ import vidSocialMould from "../content/videos/app-social-mould.mp4";
     <section>
       <AppArticle
         client:load
-        projectDescription="Get rough estimates on your weekly, monthly and yearly expenses."
-        projectTitle="Finance Insight"
+        projectDescription='Get rough estimates on your weekly, monthly and yearly expenses.'
+        projectTitle='Finance Insight'
         projectVideo={vidfinanceInsight}
         projectIcon={icfinanceInsight}
-        projectLinkLive="https://finance-insight.netlify.app/"
-        projectLinkGithub="https://github.com/quev-dev/finance-insight"
+        projectLinkLive='https://finance-insight.netlify.app/'
+        projectLinkGithub='https://github.com/quev-dev/finance-insight'
       />
       <AppArticle
         client:load
-        projectDescription="Generate a professional social media profile with a touch of your personality."
-        projectTitle="Social Mould"
+        projectDescription='Generate a professional social media profile with a touch of your personality.'
+        projectTitle='Social Mould'
         projectVideo={vidSocialMould}
         projectIcon={icSocialMould}
-        projectLinkLive="https://social-mould.netlify.app/"
-        projectLinkGithub="https://github.com/quev-dev/social-mould"
+        projectLinkLive='https://social-mould.netlify.app/'
+        projectLinkGithub='https://github.com/quev-dev/social-mould'
+      />
+      <AppArticle
+        client:load
+        projectDescription='A short web game built with plain JavaScript, HTML and CSS where you try to click an elusive square.'
+        projectTitle='catch-me'
+        projectVideo={vidCatchMe}
+        projectIcon={icCatchMe}
+        projectLinkLive='https://quevdev-catch-me.netlify.app/'
+        projectLinkGithub='https://github.com/quev-dev/catch-me/'
       />
     </section>
   </main>

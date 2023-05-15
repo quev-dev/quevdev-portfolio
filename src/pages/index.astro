@@ -1,111 +1,121 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
-import Skill from "../components/Skill.jsx";
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+import Skill from '../components/Skill.jsx';
 
-import icGithub from "../content/svgs/github.svg";
-import icTwitter from "../content/svgs/twitter.svg";
-import icArrowDown from "../content/svgs/arrow-down.svg";
+import icYouTube from '../content/svgs/youtube.svg';
+import icGithub from '../content/svgs/github.svg';
+import icTwitter from '../content/svgs/twitter.svg';
+import icArrowDown from '../content/svgs/arrow-down.svg';
 
-import icAstro from "../content/icons/astro.webp";
-import icCSS from "../content/icons/css.webp";
-import icHTML from "../content/icons/html.webp";
-import icJS from "../content/icons/js.webp";
-import icReact from "../content/icons/react.webp";
-import icSass from "../content/icons/sass.webp";
-import icTailwind from "../content/svgs/tailwind.svg";
+import icAstro from '../content/icons/astro.webp';
+import icCSS from '../content/icons/css.webp';
+import icHTML from '../content/icons/html.webp';
+import icJS from '../content/icons/js.webp';
+import icReact from '../content/icons/react.webp';
+import icSass from '../content/icons/sass.webp';
+import icTailwind from '../content/svgs/tailwind.svg';
 
-import icFLStudio from "../content/icons/fl-studio.webp";
-import icGamemaker from "../content/icons/gamemaker.webp";
-import icClipStudio from "../content/icons/clip-studio.webp";
-import icAseprite from "../content/icons/aseprite.webp";
-import icBlender from "../content/icons/blender.webp";
+import icFLStudio from '../content/icons/fl-studio.webp';
+import icGamemaker from '../content/icons/gamemaker.webp';
+import icClipStudio from '../content/icons/clip-studio.webp';
+import icAseprite from '../content/icons/aseprite.webp';
+import icBlender from '../content/icons/blender.webp';
 
-import svgExternalLink from "../content/svgs/external-link.svg";
+import svgExternalLink from '../content/svgs/external-link.svg';
 ---
 
-<Layout title="Home - QuevDev">
-  <Navbar client:load activeLink="home" />
-  <main class="md:text-xl">
+<Layout title='Home - QuevDev'>
+  <Navbar client:load activeLink='home' />
+  <main class='md:text-xl'>
     <header
-      class="banner shadow-xl text-cBackground p-12 min-h-screen mt-32 relative bottom-24 flex flex-col items-center justify-center"
+      class='banner shadow-xl text-cBackground p-12 min-h-screen mt-32 relative bottom-24 flex flex-col items-center justify-center'
     >
       <div
-        data-aos="fade-right"
-        data-aos-once="true"
-        data-aos-duration="500"
-        class="my-6"
+        data-aos='fade-right'
+        data-aos-once='true'
+        data-aos-duration='500'
+        class='my-6'
       >
-        <h1 class="text-6xl md:text-8xl font-bold mb-4">QuevDev</h1>
-        <h2 class="text-2xl md:text-4xl font-bold">Front-End Developer</h2>
-        <p class="text-xl md:text-2xl">
+        <h1 class='text-6xl md:text-8xl font-bold mb-4'>QuevDev</h1>
+        <h2 class='text-2xl md:text-4xl font-bold'>Front-End Developer</h2>
+        <p class='text-xl md:text-2xl'>
           Working to create tools with engaging UI and UX.
         </p>
       </div>
       <div
-        data-aos="fade-right"
-        data-aos-once="true"
-        data-aos-delay="300"
-        data-aos-duration="500"
-        class="flex flex-wrap items-center justify-center gap-4 bg-mid rounded-lg p-4 text-cAccent shadow-sm shadow-cAccent"
+        data-aos='fade-right'
+        data-aos-once='true'
+        data-aos-delay='300'
+        data-aos-duration='500'
+        class='flex flex-wrap items-center justify-center gap-4 bg-mid rounded-lg p-4 text-cAccent shadow-sm shadow-cAccent'
       >
         <a
-          class="flex flex-row gap-2"
-          rel="noreferrer"
-          target="_blank"
-          href="https://twitter.com/quevdev"
+          class='flex flex-row items-center gap-2'
+          rel='noreferrer'
+          target='_blank'
+          href='https://github.com/quev-dev/'
         >
-          <img class="inline w-6 h-6" src={icTwitter} alt="" />
-          Twitter
+          <img class='inline w-6 h-6' src={icGithub} alt='' />
+          GitHub
         </a>
         <a
-          class="flex flex-row gap-2"
-          rel="noreferrer"
-          target="_blank"
-          href="https://github.com/quev-dev/"
+          class='flex flex-row items-center gap-2'
+          rel='noreferrer'
+          target='_blank'
+          href='https://www.youtube.com/@quevdev'
         >
-          <img class="inline w-6 h-6" src={icGithub} alt="" />
-          GitHub
+          <img class='inline w-6 h-6' src={icYouTube} alt='' />
+          YouTube
+        </a>
+        <a
+          class='flex flex-row items-center gap-2'
+          rel='noreferrer'
+          target='_blank'
+          href='https://twitter.com/quevdev'
+        >
+          <img class='inline w-6 h-6' src={icTwitter} alt='' />
+          Twitter
         </a>
       </div>
       <div
-        data-aos="fade-right"
-        data-aos-duration="500"
-        data-aos-delay="600"
-        data-aos-once="true"
-        class="mt-4 flex flex-col items-center justify-center"
+        data-aos='fade-right'
+        data-aos-duration='500'
+        data-aos-delay='600'
+        data-aos-once='true'
+        class='mt-4 flex flex-col items-center justify-center'
       >
-        <p class="text-center w-3/4 m-auto mb-1">
+        <p class='text-center w-3/4 m-auto mb-1'>
           Scroll down to learn more about me and what I create.
         </p>
-        <button name="Scroll Button">
+        <button name='Scroll Button'>
           <img
-            id="scroll-btn"
+            id='scroll-btn'
             src={icArrowDown}
-            class="w-8 h-8 drop-shadow-xl"
-            alt=""
+            class='w-8 h-8 drop-shadow-xl'
+            alt=''
           />
         </button>
       </div>
     </header>
     <div
-      id="scroll-target"
-      class="flex flex-col gap-12 m-8 md:gap-16 lg:gap-24 md:w-1/2 md:m-auto"
+      id='scroll-target'
+      class='flex flex-col gap-12 m-8 md:gap-16 lg:gap-24 md:w-1/2 md:m-auto'
     >
-      <section class="flex flex-col gap-2 md:gap-4">
+      <section class='flex flex-col gap-2 md:gap-4'>
         <h3
-          data-aos="fade-right"
-          data-aos-once="true"
-          data-aos-duration="500"
-          class="text-4xl font-bold"
+          data-aos='fade-right'
+          data-aos-once='true'
+          data-aos-duration='500'
+          class='text-4xl font-bold'
         >
           About Me 📄
         </h3>
         <article
-          data-aos="fade-right"
-          data-aos-once="true"
-          data-aos-duration="500"
+          data-aos='fade-right'
+          data-aos-once='true'
+          data-aos-duration='500'
         >
           <p>
             I'm a front-end developer, working to create unique and responsive
@@ -117,100 +127,100 @@ import svgExternalLink from "../content/svgs/external-link.svg";
           </p>
         </article>
       </section>
-      <section class="flex flex-col gap-2 md:gap-4">
+      <section class='flex flex-col gap-2 md:gap-4'>
         <h3
-          data-aos="fade-right"
-          data-aos-once="true"
-          data-aos-duration="500"
-          class="text-4xl font-bold"
+          data-aos='fade-right'
+          data-aos-once='true'
+          data-aos-duration='500'
+          class='text-4xl font-bold'
         >
           Skills 🗒️
         </h3>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-duration="500">
+        <p data-aos='fade-right' data-aos-once='true' data-aos-duration='500'>
           Here are some of the technologies I've worked with the most to build
           web applications.
         </p>
         <ul
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-duration="500"
-          class="grid grid-cols-2 gap-4 bg-mid p-4 mb-6 rounded-lg shadow-xl"
+          data-aos='fade-left'
+          data-aos-once='true'
+          data-aos-duration='500'
+          class='grid grid-cols-2 gap-4 bg-mid p-4 mb-6 rounded-lg shadow-xl'
         >
-          <Skill text="HTML" image={icHTML} link="https://html.com/" />
-          <Skill text="CSS" image={icCSS} link="https://www.css3.com/" />
-          <Skill text="Sass" image={icSass} link="https://sass-lang.com/" />
+          <Skill text='HTML' image={icHTML} link='https://html.com/' />
+          <Skill text='CSS' image={icCSS} link='https://www.css3.com/' />
+          <Skill text='Sass' image={icSass} link='https://sass-lang.com/' />
           <Skill
-            text="JavaScript"
+            text='JavaScript'
             image={icJS}
-            link="https://www.javascript.com/"
+            link='https://www.javascript.com/'
           />
-          <Skill text="React" image={icReact} link="https://react.dev/" />
-          <Skill text="Astro" image={icAstro} link="https://astro.build/" />
+          <Skill text='React' image={icReact} link='https://react.dev/' />
+          <Skill text='Astro' image={icAstro} link='https://astro.build/' />
           <Skill
-            text="Tailwind"
+            text='Tailwind'
             image={icTailwind}
-            link="https://tailwindcss.com/"
+            link='https://tailwindcss.com/'
           />
         </ul>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-duration="500">
+        <p data-aos='fade-right' data-aos-once='true' data-aos-duration='500'>
           I've also worked with a variety of other applications in my other
           projects - you can view the projects I've created by visiting the <a
-            class="text-cAccent"
-            href="/projects">Projects</a
+            class='text-cAccent'
+            href='/projects'>Projects</a
           > page. You can view an assortment of the software I've used below:
         </p>
         <ul
-          data-aos="fade-left"
-          data-aos-once="true"
-          data-aos-duration="500"
-          class="grid grid-cols-2 gap-4 bg-mid p-4 mb-6 rounded-lg shadow-xl"
+          data-aos='fade-left'
+          data-aos-once='true'
+          data-aos-duration='500'
+          class='grid grid-cols-2 gap-4 bg-mid p-4 mb-6 rounded-lg shadow-xl'
         >
           <Skill
-            text="FL Studio"
+            text='FL Studio'
             image={icFLStudio}
-            link="https://www.image-line.com/"
+            link='https://www.image-line.com/'
           />
           <Skill
-            text="Blender"
+            text='Blender'
             image={icBlender}
-            link="https://www.blender.org/"
+            link='https://www.blender.org/'
           />
           <Skill
-            text="GameMaker"
+            text='GameMaker'
             image={icGamemaker}
-            link="https://gamemaker.io/en"
+            link='https://gamemaker.io/en'
           />
           <Skill
-            text="Aseprite"
+            text='Aseprite'
             image={icAseprite}
-            link="https://www.aseprite.org/"
+            link='https://www.aseprite.org/'
           />
           <Skill
-            text="Clip Studio"
+            text='Clip Studio'
             image={icClipStudio}
-            link="https://www.clipstudio.net/en/"
+            link='https://www.clipstudio.net/en/'
           />
         </ul>
       </section>
-      <section class="flex flex-col gap-2">
+      <section class='flex flex-col gap-2'>
         <h3
-          data-aos="fade-right"
-          data-aos-once="true"
-          data-aos-duration="500"
-          class="text-4xl font-bold"
+          data-aos='fade-right'
+          data-aos-once='true'
+          data-aos-duration='500'
+          class='text-4xl font-bold'
         >
           Pages 📜
         </h3>
-        <p data-aos="fade-right" data-aos-once="true" data-aos-duration="500">
+        <p data-aos='fade-right' data-aos-once='true' data-aos-duration='500'>
           You can view the various works I've created using the links below, or
           the navigation items at the top. You may also contact me through an
           email form if you'd like.
         </p>
-        <ul data-aos="fade-right" data-aos-once="true" data-aos-duration="500">
-          <li class="flex flex-wrap gap-4">
-            <a href="/web-apps">📦 Web Apps</a>
-            <a href="/projects">🎨 Projects</a>
-            <a href="/contact">✉️ Contact</a>
+        <ul data-aos='fade-right' data-aos-once='true' data-aos-duration='500'>
+          <li class='flex flex-wrap gap-4'>
+            <a href='/web-apps'>📦 Web Apps</a>
+            <a href='/projects'>🎨 Projects</a>
+            <a href='/contact'>✉️ Contact</a>
           </li>
         </ul>
       </section>
@@ -220,10 +230,10 @@ import svgExternalLink from "../content/svgs/external-link.svg";
 </Layout>
 
 <script>
-  const scrollButton = document.querySelector("#scroll-btn");
-  const targetScrollElement = document.querySelector("#scroll-target");
+  const scrollButton = document.querySelector('#scroll-btn');
+  const targetScrollElement = document.querySelector('#scroll-target');
 
-  scrollButton.addEventListener("click", () => {
+  scrollButton.addEventListener('click', () => {
     const targetElementRect = targetScrollElement.getBoundingClientRect();
     const bufferDistance = 200;
     const currentScrollPosition =
@@ -231,6 +241,6 @@ import svgExternalLink from "../content/svgs/external-link.svg";
     const targetScrollPosition =
       targetElementRect.top + currentScrollPosition - bufferDistance;
 
-    window.scrollBy({ top: targetScrollPosition, behavior: "smooth" });
+    window.scrollBy({ top: targetScrollPosition, behavior: 'smooth' });
   });
 </script>
