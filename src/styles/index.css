@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
 :root {
   --cBackground: #fff3ef;
@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background-color: var(--cBackground);
   color: var(--cDark);
 
@@ -41,7 +41,7 @@ html {
 body {
   min-height: 100vh;
   background-size: cover;
-  background-image: url("../content/svgs/bg-body.svg");
+  background-image: url('../content/svgs/bg-body.svg');
 
   overflow-x: hidden;
 }
@@ -50,10 +50,33 @@ code {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+#embed-container iframe {
+  max-width: 100%;
+  outline: none;
+  border: 2px solid transparent;
+  transition: var(--transitionDefault);
+}
+#embed-container iframe:focus {
+  border: 2px solid var(--cAccent);
+}
+
+@media screen and (min-width: 768px) {
+  #embed-container iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #embed-container iframe {
+    width: 600px;
+    height: 338px;
+  }
+}
+
 /* Utility Classes */
 .bg-mid {
   background-size: cover;
-  background-image: url("../content/svgs/bg-body-mid.svg");
+  background-image: url('../content/svgs/bg-body-mid.svg');
 }
 .deactivated {
   pointer-events: none;
