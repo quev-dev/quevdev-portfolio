@@ -1,4 +1,7 @@
 import svgBorder from '../content/svgs/border-footer.svg';
+import svgTwitter from '../content/svgs/twitter.svg';
+import svgGitHub from '../content/svgs/github.svg';
+import svgYouTube from '../content/svgs/youtube.svg';
 
 export default function Footer() {
   return (
@@ -11,10 +14,38 @@ export default function Footer() {
         />
       </div>
       <section className='bg-cAccent text-cBackground p-4 flex flex-col md:flex-row md:justify-center'>
-        <article className='p-4 pb-0'>
-          <h4 className='font-bold'>&copy; QuevDev 2023</h4>
-          <p>All rights reserved.</p>
-        </article>
+        <ul className='p-4 pb-0 flex flex-col gap-2'>
+          <li>
+            <h4 className='font-bold'>&copy; QuevDev 2023</h4>
+            <p>All rights reserved.</p>
+          </li>
+          <li className='flex flex-wrap gap-2'>
+            <a
+              rel='noreferrer'
+              href='https://github.com/quev-dev'
+              target='_blank'
+              className='bg-cBackground rounded-md flex items-center justify-center p-1 cursor-pointer'
+            >
+              <img src={svgGitHub} alt='GitHub' className='w-5 h-5' />
+            </a>
+            <a
+              rel='noreferrer'
+              href='https://youtube.com/@quevdev'
+              target='_blank'
+              className='bg-cBackground rounded-md flex items-center justify-center p-1 cursor-pointer'
+            >
+              <img src={svgYouTube} alt='YouTube' className='w-5 h-5' />
+            </a>
+            <a
+              rel='noreferrer'
+              href='https://twitter.com/quevdev'
+              target='_blank'
+              className='bg-cBackground rounded-md flex items-center justify-center p-1 cursor-pointer'
+            >
+              <img src={svgTwitter} alt='Twitter' className='w-5 h-5' />
+            </a>
+          </li>
+        </ul>
         <article className='p-4'>
           <div className='mb-4'>
             <h4 className='font-bold'>Resources</h4>
