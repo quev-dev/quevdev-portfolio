@@ -48,6 +48,19 @@ export default function Footer() {
         </ul>
         <article className='p-4'>
           <div className='mb-4'>
+            <p>
+              You can check out the source code for this portfolio by viewing
+              its GitHub repository with the link below.
+            </p>
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='https://github.com/quev-dev/quevdev-portfolio'
+            >
+              quevdev-portfolio
+            </a>
+          </div>
+          <div className='mb-4'>
             <h4 className='font-bold'>Resources</h4>
             <p>
               You can view the resources I used for building this portfolio

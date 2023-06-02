@@ -7,7 +7,6 @@
   height: auto;
   overflow-x: hidden;
   z-index: 10;
-
   pointer-events: none;
 }
 .animated-border {
@@ -16,6 +15,7 @@
   position: relative;
   width: 200%;
   height: auto;
+  pointer-events: none;
 }
 .loading-pulse {
   animation: loadingPulse 1s ease-in-out infinite;
