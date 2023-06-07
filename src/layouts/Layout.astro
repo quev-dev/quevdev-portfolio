@@ -5,34 +5,33 @@ export interface Props {
 
 const { title } = Astro.props;
 
-import { SEOMetadata } from "astro-seo-metadata";
+import { SEOMetadata } from 'astro-seo-metadata';
 
-import "../styles/index.css";
-import "../styles/transitions.css";
-import "../styles/animations.css";
-import "../styles/backgrounds.css";
+import '../styles/index.css';
+import '../styles/transitions.css';
+import '../styles/animations.css';
+import '../styles/backgrounds.css';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.ico" /> -->
-    <meta name="generator" content={Astro.generator} />
-    <!-- <title>{title}</title> -->
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <meta name='theme-color' content='#ad475a' />
 
     <SEOMetadata
-      siteName="QuevDev"
+      siteName='QuevDev'
       title={title}
       description="A portfolio showcasing the projects I've created, including web applications, music, and game development projects."
-      image="https://i.imgur.com/NgdQ1xd.jpg"
-      favicon="/favicon.ico"
-      author="QuevDev"
-      copyright="QuevDev"
+      image='https://i.imgur.com/GFxuk1T.png'
+      favicon='/favicon.ico'
+      author='QuevDev'
+      copyright='QuevDev'
       astroSitemap={true}
       canonicalUrl={Astro.url.toString()}
-      type="website"
+      type='website'
       astroGenerator={true}
     />
   </head>
@@ -41,8 +40,8 @@ import "../styles/backgrounds.css";
     <style is:global></style>
 
     <script>
-      import AOS from "aos";
-      import "aos/dist/aos.css";
+      import AOS from 'aos';
+      import 'aos/dist/aos.css';
 
       AOS.init();
     </script>
