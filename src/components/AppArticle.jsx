@@ -21,10 +21,10 @@ export default function AppArticle({
     >
       <section className='flex flex-col md:w-1/2 md:items-center md:justify-center'>
         <div>
-          <img className='w-10 h-10 inline' src={projectIcon} alt='Icon' />
-          <h3 className='text-3xl font-bold inline relative top-2 ml-2'>
-            {projectTitle}
-          </h3>
+          <div className='flex flex-row gap-2 items-center'>
+            <img className='w-10 h-10' src={projectIcon} alt='Icon' />
+            <h3 className='text-3xl font-bold'>{projectTitle}</h3>
+          </div>
           <p className='my-2'>{projectDescription}</p>
           <aside className='text-cAccent flex flex-row gap-4'>
             <a target='_blank' rel='noreferrer' href={projectLinkLive}>
